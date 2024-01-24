@@ -1,0 +1,44 @@
+-VALORE CARTE:
+	- Carte numerate 2-10 hanno valore uguale al proprio numero
+	- Carte con figure (J,Q, e K) valgono 10
+	- L'asso vale 1 o 11
+		- SE valore mano <= 10 allora asso = 11
+		- ALTRIMENTI asso = 1
+
+
+- Dealer distribuisce 2 carte per ogni giocatore all'interno della lista Giocatori (Alberto, Alessandro, Marco)
+
+- Dealer distribuisce 2 carte a se stesso, ma ne rivela solo una
+
+- ogni Giocatore punta
+
+- ogni Giocatore osserva le due carte iniziali:
+	
+	
+
+- ogni Giocatore Decide se HIT or STAY:
+	- SE valore carte = 21 allora STAY e continua
+	- ALTRIMENTI
+		
+		- SE valore mano => 17 E < 21 allora STAY e continua
+		- ALTRIMENTI 
+			- FINCHE' valore mano => 17 HIT
+				- SE valore nuova mano > 21 allora BUST
+				- SE BUST ricomincia da capo
+
+		
+- Dealer esamina le sue carte:
+	- FINCHE' valore mano Dealer < 17 allora Dealer HIT
+		- SE valore nuova mano Dealer > 21 allora Dealer BUST
+	- SE valore mano Dealer => 17 STAY
+
+
+- SE valore mano Giocatore > valore mano Dealer allora Giocatore VINCE
+	- ALTRIMENTI Giocatore PERDE
+
+- SE valore mano Giocatore = valore mano Dealer PAREGGIO
+
+- Controlla conto in banca
+
+- GIOCA di nuovo
+
